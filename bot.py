@@ -44,6 +44,8 @@ class Bot():
                     post.save()
                     self.count += 1
                     print("Done!")
+                    print(post.author)
+                    break
 
 resume_bot = Bot()
 print(resume_bot.count)
