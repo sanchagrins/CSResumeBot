@@ -2,11 +2,14 @@ import os
 import urllib
 import re
 import requests
+
+
 from bs4 import BeautifulSoup
+import mkdir
 
 def downloadImage(url, filename):
     path = './img'
-    makeDir(path)
+    mkdir.make(path)
     response = requests.get(url)
     if response.status_code == 200:
         print('Downloading %s...' % filename)
@@ -28,10 +31,6 @@ def getImageUrl(raw_url):
         
 def getFilename(image_url):
     return re.search(r'(?:[^/][\d\w.]+)+$', image_url).group(0)
-
-def makeDir(path):
-    if not os.path.exists(path):
-        os.makedirs(path)
 
 def verifyImgur(url):
     if 'i.imgur' in url:
