@@ -1,5 +1,5 @@
-.swp
-.pyc
+*.swp
+*.pyc
 client_secret.json
 img/
 filtered/
