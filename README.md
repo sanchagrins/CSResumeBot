@@ -1,5 +1,4 @@
 # CSResumeBot
-----
 The CSResumeBot is a collection of scripts that scrapes the [/r/cscareerquestions](https://www.reddit.com/r/cscareerquestions/) reoccurring resume advice thread. Initially the bot searches for previous Resume Advice threads, parses the top levle comments for hyperlinks, determines the valid links, then retrieves the image link.
 
 Subsequent scripts the download the images storing both their original URL and system paths in a MongoDB. 
@@ -9,7 +8,6 @@ Once the resumes have been collected, custom image filtering is conducted on eac
 The parsed resumes are then validated and the data is extracted into the database for future analysis.
 
 ## Instructions
-----
 
 ### Requirements
 
